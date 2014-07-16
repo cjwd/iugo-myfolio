@@ -1,0 +1,13 @@
+body {
+    font-weight: 400;
+}
+/*------------------------------------*\
+    HEADINGS
+\*------------------------------------*/
+.section-title {
+  text-transform: uppercase;
+}
+.section-title::after {
+  content: '~~~~~::~~~~~';
+  display: inline-block;
+}
