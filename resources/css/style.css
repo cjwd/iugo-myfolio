@@ -3518,13 +3518,19 @@ label,
 .hero {
   background: url("imgs/hero-bg.png") no-repeat scroll center center / cover #000000;
   height: auto;
-  padding: 65px 0 300px;
   color: #fff;
   text-align: center;
 }
 .word-block::after {
-  content: '~~~~::~~~~';
+  content: '{';
   display: inline-block;
+  font-size: 96px;
+  font-size: 6rem;
+  transform: rotate(-90deg);
+}
+.word-block {
+  padding-top: 12rem;
+  line-height: 1.2;
 }
 .title {
   font-size: 72px;
@@ -3539,6 +3545,11 @@ label,
 .subtitle,
 .tagline {
   margin: 0;
+}
+.readmore {
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 12rem;
 }
 .btn--primary {
   background: #CFC91D;

@@ -1,7 +1,6 @@
 .hero {
     background: url("imgs/hero-bg.png") no-repeat scroll center center / cover  rgba(0, 0, 0, 1);
     height: auto;
-    padding: 65px 0 300px;
     color:#fff;
     text-align: center;
 
@@ -10,11 +9,14 @@
 .word-block::after {
     content: '{';
     display:inline-block;
-    transform:rotate(-45deg);
+    .font-size(96);
+    transform:rotate(-90deg);
+    
 }
 
 .word-block {
-    
+    padding-top:12rem;
+    line-height: 1.2;
 }
     .title {
         .font-size(@mega-size);
@@ -30,3 +32,9 @@
     .tagline {
         margin: 0;
     }
+
+.readmore {
+    width:200px;
+    margin:0 auto;
+    padding-bottom:12rem;
+}
