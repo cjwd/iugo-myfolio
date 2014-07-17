@@ -3613,13 +3613,16 @@ label,
   text-align: center;
 }
 /**
-* Services
+ * Services
 */
 #services {
-  background: #F0F0E8;
+  background: #f0f0e8 url('imgs/woman-typing-on-mac.png') 115% 0 no-repeat;
+}
+.services-listing {
+  margin-right: 50%;
 }
 /**
-* Contact
+ * Contact
 */
 #contact {
   padding-bottom: 0;
