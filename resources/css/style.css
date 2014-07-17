@@ -3706,7 +3706,7 @@ label,
   padding-bottom: 0;
 }
 .contact-form {
-  background: #333333 url('imgs/absurdidad.png') 0 0 repeat;
+  background-color: #0b0b0b;
   padding: 2.1875rem 0;
 }
 .contact-form label {
