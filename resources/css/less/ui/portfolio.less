@@ -1,7 +1,57 @@
+.portfolio {
+    figure {
+        margin: 0;
+        position: relative;
+        img {
+            display: block;
+        }
+    }
+    
+    figcaption {
+        position: absolute;
+        top: 0;
+        left:0;
+        padding: 20px;
+        background: @brand-color;
+        color: #fff;
+        
+        a {
+            color:orange;
+        }
+    }
+}
 .portfolio__item {
     margin-bottom: -6px;
     img {
         width:320px;
         height:240px;
-    }
+    }   
+    
+}
+
+/**
+ * Animation
+*/
+
+.fadeIn figcaption {
+    height:100%;
+    width:100%;
+    opacity: 0;
+    
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.no-touch .fadeIn figure:hover figcaption,
+.fadeIn figure.cs-hover figcaption {
+    opacity: 1;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
 }
