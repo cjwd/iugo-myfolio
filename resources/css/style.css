@@ -140,6 +140,9 @@
 /*------------------------------------*\
     $CUSTOM
 \*------------------------------------*/
+/*
+ * Breakpoints
+*/
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
@@ -3454,6 +3457,26 @@ label,
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+.navbar-toggle {
+  background: none;
+  width: 48px;
+  height: 48px;
+  border: none;
+  fill: #cfc91d;
+}
+@media only screen and (min-width: 64em) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+.collapse {
+  display: none;
+}
+@media only screen and (min-width: 64em) {
+  .collapse {
+    display: inline-block;
+  }
+}
 .site-nav {
   text-align: justify;
   height: 3em;
@@ -3503,21 +3526,24 @@ label,
   text-transform: uppercase;
 }
 .logo-color {
-  color: #CFC91D;
+  color: #cfc91d;
 }
-@media screen and (max-width: 720px) {
-  .site-nav {
-    height: auto;
-  }
-  .site-nav > .site-nav__logo,
-  .site-nav > .site-nav__logo h1,
-  .site-nav .site-nav__navbar {
-    height: auto;
-    width: auto;
-    display: block;
-    text-align: center;
-  }
-}
+/*@media screen and (max-width: 720px){
+     
+    .site-nav {
+        height: auto;
+    }
+     
+    .site-nav > .site-nav__logo,
+    .site-nav > .site-nav__logo h1,
+    .site-nav .site-nav__navbar {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+     
+}*/
 .hero {
   background: url("imgs/hero-bg.png") no-repeat scroll center center / cover #000000;
   height: auto;
@@ -3534,17 +3560,34 @@ label,
   transform: rotate(-90deg);
 }
 .word-block {
-  padding-top: 12rem;
+  padding-top: 6rem;
   line-height: 1.2;
 }
+@media only screen and (min-width: 64em) {
+  .word-block {
+    padding-top: 12rem;
+  }
+}
 .title {
-  font-size: 72px;
-  font-size: 4.5rem;
   text-transform: uppercase;
-  letter-spacing: 1.2rem;
+}
+@media only screen and (min-width: 64em) {
+  .title {
+    font-size: 72px;
+    font-size: 4.5rem;
+    letter-spacing: 1.2rem;
+  }
 }
 .subtitle {
   font-weight: 400;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 64em) {
+  .subtitle {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
 }
 .title,
 .subtitle,
@@ -3554,7 +3597,12 @@ label,
 .readmore {
   width: 200px;
   margin: 0 auto;
-  padding-bottom: 12rem;
+  padding-bottom: 6rem;
+}
+@media only screen and (min-width: 64em) {
+  .readmore {
+    padding-bottom: 12rem;
+  }
 }
 .btn--primary {
   background: #CFC91D;
@@ -3563,9 +3611,40 @@ label,
   font-weight: 800;
   font-size: 0.875rem;
 }
+.highlight {
+  font-weight: 800;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
 /*------------------------------------*\
-    $BASE
+    BASE
 \*------------------------------------*/
+.container {
+  padding: 0 1.5em;
+}
+@media only screen and (min-width: 64em) {
+  .container {
+    padding: 0 8em;
+  }
+}
+.inner {
+  padding: 1em 2em;
+}
+@media only screen and (min-width: 64em) {
+  .inner {
+    padding: 2em 4em;
+  }
+}
+.section-padding {
+  padding-top: 2.375em;
+  padding-bottom: 2.375em;
+}
+@media only screen and (min-width: 64em) {
+  .section-padding {
+    padding-top: 4.375em;
+    padding-bottom: 4.375em;
+  }
+}
 /*------------------------------------*\
     $HEADINGS
 \*------------------------------------*/
@@ -3584,33 +3663,19 @@ label,
     $PARAGRAPHS
 \*------------------------------------*/
 .section-intro {
-  margin-bottom: 6rem;
-  line-height: 2.5;
+  line-height: 2;
 }
-/*------------------------------------*\
-    $EMPHASIS
-\*------------------------------------*/
-.highlight {
-  font-weight: 800;
-  font-size: 20px;
-  font-size: 1.25rem;
+@media only screen and (min-width: 64em) {
+  .section-intro {
+    margin-bottom: 6rem;
+    line-height: 2.5;
+  }
 }
-/*------------------------------------*\
-    SECTIONS
-\*------------------------------------*/
-.container {
-  padding: 0 8em;
-}
-.inner {
-  padding: 2em 4em;
-}
-.section-padding {
-  padding-top: 4.375em;
-  padding-bottom: 4.375em;
-}
-#work,
-#contact {
-  padding-bottom: 0;
+@media only screen and (min-width: 64em) {
+  #work,
+  #contact {
+    padding-bottom: 0;
+  }
 }
 #about,
 #contact,
@@ -3621,10 +3686,18 @@ label,
  * Services
 */
 #services {
-  background: #f0f0e8 url('imgs/woman-typing-on-mac.png') 115% 0 no-repeat;
+  background-color: #F0F0E8;
+  text-align: center;
 }
-.services-listing {
-  margin-right: 50%;
+@media only screen and (min-width: 64em) {
+  #services {
+    background: #f0f0e8 url('imgs/woman-typing-on-mac.png') 100% 0 no-repeat;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .services-listing {
+    margin-right: 50%;
+  }
 }
 /**
  * Contact
@@ -3633,7 +3706,7 @@ label,
   padding-bottom: 0;
 }
 .contact-form {
-  background: #333333 url('../imgs/absurdidad.png') 0 0 repeat;
+  background: #333333 url('imgs/absurdidad.png') 0 0 repeat;
   padding: 2.1875rem 0;
 }
 .contact-form label {
@@ -3680,39 +3753,68 @@ body {
     TALKING POINTS
 \*------------------------------------*/
 .talking-points {
-  padding: 0 2em;
-  border-right: 1px solid #cccccc;
+  padding: 1em 2em;
+  border: 0px solid #cccccc;
+  border-bottom-width: 1px;
   line-height: 2;
 }
+@media only screen and (min-width: 64em) {
+  .talking-points {
+    border-right-width: 1px;
+    border-bottom-width: 0;
+  }
+}
 .talking-points.last {
-  border-right: none;
+  border-bottom: none;
+}
+@media only screen and (min-width: 64em) {
+  .talking-points.last {
+    border-right: none;
+  }
 }
 .talking-points__image {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   display: block;
   fill: #02918d;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 1em auto;
 }
-.talking-points__image.img--center {
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (min-width: 64em) {
+  .talking-points__image {
+    width: 32px;
+    height: 32px;
+  }
 }
 .talking-points__title {
   font-weight: 800;
 }
-.talking-points__body {
-  font-size: 0.6875rem;
+@media only screen and (min-width: 64em) {
+  .talking-points__title {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
-.portfolio figure {
-  margin: 0;
-  position: relative;
+@media only screen and (min-width: 64em) {
+  .talking-points__body {
+    font-size: 0.6875rem;
+  }
 }
-.portfolio figure img {
+img {
   display: block;
 }
-.portfolio figcaption {
+@media only screen and (min-width: 64em) {
+  img {
+    width: 100%;
+    height: 240px;
+  }
+}
+.portfolio__item figure {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+.portfolio__item figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -3720,15 +3822,8 @@ body {
   background: #02918d;
   color: #fff;
 }
-.portfolio figcaption a {
+.portfolio__item figcaption a {
   color: orange;
-}
-.portfolio__item {
-  margin-bottom: -6px;
-}
-.portfolio__item img {
-  width: 320px;
-  height: 240px;
 }
 /**
  * Animation

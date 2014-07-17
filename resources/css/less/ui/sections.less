@@ -1,22 +1,70 @@
 /*------------------------------------*\
-    SECTIONS
+    BASE
 \*------------------------------------*/
 .container {
-    padding:0 8em;
+    padding:0 1.5em;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        padding:0 8em;
+    }
 }
 
 .inner {
-    padding:2em 4em;
+    padding:1em 2em;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        padding:2em 4em;
+    }
+    
 }
 
 .section-padding {
-    padding-top:4.375em;
-    padding-bottom: 4.375em;
+    padding-top:2.375em;
+    padding-bottom: 2.375em;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        padding-top:4.375em;
+        padding-bottom: 4.375em;
+    }
+    
 }
+
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+
+.section-title {
+    text-transform: uppercase;
+    color:@brand-color;
+}
+
+.section-title::after {
+    content: '~~~~~~~~ :: ~~~~~~~~';
+    display: block;
+    .font-size(14);
+    color:#ccc;
+}
+
+/*------------------------------------*\
+    $PARAGRAPHS
+\*------------------------------------*/
+
+.section-intro {
+    line-height: 2;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        margin-bottom:6rem;
+        line-height:2.5;
+    }
+}
+
 
 #work,
 #contact {
-    padding-bottom:0;
+    @media only screen and (min-width: ~"@{desk}em") {
+        padding-bottom:0;
+    }
+    
 }
 
 #about, 
@@ -29,11 +77,20 @@
  * Services
 */
 #services {
-    background:#F0F0E8 url('imgs/woman-typing-on-mac.png') 115% 0 no-repeat;
+    background-color:#F0F0E8;
+    text-align: center;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        background:#F0F0E8 url('imgs/woman-typing-on-mac.png') 100% 0 no-repeat;
+    }
+    
 }
 
 .services-listing {
-    margin-right:50%;
+    @media only screen and (min-width: ~"@{desk}em") {
+        margin-right:50%;
+    }
+    
 }
 
 /**
@@ -45,7 +102,7 @@
 }
 
 .contact-form {
-    background:#333 url('../imgs/absurdidad.png') 0 0 repeat;
+    background:#333 url('imgs/absurdidad.png') 0 0 repeat;
     padding: 2.1875rem 0;
     label {
         display:none;

@@ -1,3 +1,28 @@
+.navbar-toggle {
+    background:none;
+    width:48px;
+    height:48px;
+    border:none;
+    fill:@primary-color;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        display:none;
+
+    }
+}
+
+.collapse {
+    display:none;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        display:inline-block;
+
+    }
+
+            
+
+}
+
 .site-nav {
     text-align: justify;
     height: 3em;
@@ -11,7 +36,8 @@
     display: inline-block;
     width: 100%;
 }
- 
+
+
 .site-nav__logo,
 .site-nav__logo::before,
 .site-nav__navbar,
@@ -55,10 +81,10 @@
 }
 
 .logo-color {
-    color:#CFC91D;
+    color:@primary-color;
 }
  
-@media screen and (max-width: 720px){
+/*@media screen and (max-width: 720px){
      
     .site-nav {
         height: auto;
@@ -73,5 +99,5 @@
         text-align: center;
     }
      
-}
+}*/
 

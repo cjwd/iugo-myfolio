@@ -15,17 +15,32 @@
 }
 
 .word-block {
-    padding-top:12rem;
+    padding-top: 6rem;
     line-height: 1.2;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        padding-top:12rem;
+    }
 }
     .title {
-        .font-size(@mega-size);
         text-transform: uppercase;
-        letter-spacing: 1.2rem;
+        
+        @media only screen and (min-width: ~"@{desk}em") {
+            .font-size(@mega-size);
+            letter-spacing: 1.2rem;
+            
+        }
     }
 
     .subtitle {
         font-weight: 400;
+        .font-size(18);
+        
+        @media only screen and (min-width: ~"@{desk}em") {
+            .font-size(@h2-size);
+        }
+            
+        
     }
     .title,
     .subtitle,
@@ -36,5 +51,9 @@
 .readmore {
     width:200px;
     margin:0 auto;
-    padding-bottom:12rem;
+    padding-bottom:6rem;
+    
+    @media only screen and (min-width: ~"@{desk}em") {
+        padding-bottom:12rem;
+    }
 }

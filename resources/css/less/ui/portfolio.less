@@ -1,10 +1,20 @@
-.portfolio {
+img {
+    display: block;
+
+    @media only screen and (min-width: ~"@{desk}em") {
+        width:100%;
+        height:240px;
+
+    }
+}
+
+.portfolio__item {
+    
     figure {
         margin: 0;
         position: relative;
-        img {
-            display: block;
-        }
+        width:100%;
+        height:240px;
     }
     
     figcaption {
@@ -20,14 +30,7 @@
         }
     }
 }
-.portfolio__item {
-    margin-bottom: -6px;
-    img {
-        width:320px;
-        height:240px;
-    }   
-    
-}
+
 
 /**
  * Animation

@@ -3,36 +3,56 @@
 \*------------------------------------*/
 
 .talking-points {
-    padding: 0 2em;
-    border-right:1px solid @base-ui-color;
+    padding: 1em 2em;
+    border: 0px solid @base-ui-color;
+    border-bottom-width: 1px;
     line-height: 2;
     
-    &.last {
-        border-right:none;
+    @media only screen and (min-width: ~"@{desk}em") {
+        border-right-width: 1px;   
+        border-bottom-width: 0;
+
     }
+    
+    &.last {
+        border-bottom:none;
+        
+        @media only screen and (min-width: ~"@{desk}em") {
+            border-right:none;
+        }
+    }
+    
     
 }
 
     .talking-points__image {
-        width: 32px;
-        height: 32px;
+        width: 48px;
+        height: 48px;
         display: block;
         fill: @brand-color;
-        margin-top:2em;
-        margin-bottom:2em;
+        margin: 1em auto; 
+
         
-        &.img--center {
-            margin-left: auto;
-            margin-right: auto;
+        @media only screen and (min-width: ~"@{desk}em") {
+            width: 32px;
+            height: 32px;
         }
-        
     }
 
     .talking-points__title {
         font-weight:800;
+        
+        @media only screen and (min-width: ~"@{desk}em") {
+            .font-size(16);
+        }
     }
 
     .talking-points__body {
-        font-size:0.6875rem;  
+        
+        @media only screen and (min-width: ~"@{desk}em") {
+            font-size:0.6875rem;     
+
+        }
+         
     }
 

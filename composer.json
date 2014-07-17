@@ -1,9 +1,0 @@
-{
-    "require": {
-        "phpmailer/phpmailer": "dev-master",
-        "wixel/gump": "dev-master"
-    },
-    "config": {
-        "vendor-dir": "phplibs"
-    }
-}

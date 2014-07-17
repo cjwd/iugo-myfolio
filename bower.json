@@ -2,6 +2,7 @@
     "name": "Myfolio",
     "version": "0.0.5",
     "dependencies": {
-        "csswizardry-grids": "latest"
+        "csswizardry-grids": "latest",
+        "jquery-waypoints": "latest"
     }
 }
