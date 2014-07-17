@@ -1,28 +1,23 @@
-/*------------------------------------*\
-    TALKING POINTS
-\*------------------------------------*/
+.tp {
+
+    width:80em;
+    /**
+     * reset width to use normal
+     * grid widths
+     */
+    @media only screen and (min-width: ~"@{desk}em") {
+        width:inherit;   
+    } 
+}
 
 .talking-points {
     padding: 1em 2em;
-    border: 0px solid @base-ui-color;
-    border-bottom-width: 1px;
+    border-right: 1px solid @base-ui-color;
     line-height: 2;
     
-    @media only screen and (min-width: ~"@{desk}em") {
-        border-right-width: 1px;   
-        border-bottom-width: 0;
-
-    }
-    
     &.last {
-        border-bottom:none;
-        
-        @media only screen and (min-width: ~"@{desk}em") {
-            border-right:none;
-        }
+        border-right:none;
     }
-    
-    
 }
 
     .talking-points__image {
@@ -31,8 +26,7 @@
         display: block;
         fill: @brand-color;
         margin: 1em auto; 
-
-        
+ 
         @media only screen and (min-width: ~"@{desk}em") {
             width: 32px;
             height: 32px;

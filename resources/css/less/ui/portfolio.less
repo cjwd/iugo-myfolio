@@ -1,4 +1,18 @@
-img {
+.portfolio {
+
+    width:160em;
+    height:200px;
+    /**
+     * reset width to use normal
+     * grid widths
+     */
+    @media only screen and (min-width: ~"@{desk}em") {
+        width:inherit;
+        height:auto;  
+    } 
+}
+
+.portfolio__img {
     display: block;
 
     @media only screen and (min-width: ~"@{desk}em") {
@@ -9,12 +23,18 @@ img {
 }
 
 .portfolio__item {
-    
+    width:320px;
+
+    @media only screen and (min-width: ~"@{desk}em") {
+        width: 25%;
+
+    }
+
     figure {
         margin: 0;
         position: relative;
-        width:100%;
-        height:240px;
+        
+        
     }
     
     figcaption {
@@ -29,6 +49,7 @@ img {
             color:orange;
         }
     }
+
 }
 
 

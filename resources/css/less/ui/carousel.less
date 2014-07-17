@@ -1,0 +1,17 @@
+/**
+ * Overflow Carousel Patten for a more 
+ * intuitive UI for responsive grids than 
+ * having stacked boxes.
+ *
+ * codepen.io/cjwd/pen/cwgpk
+ */
+.carousel {
+    max-width: 100%;
+    overflow:hidden;
+    overflow-x:scroll;
+
+    @media only screen and (min-width: ~"@{desk}em") {
+        overflow:auto; //inherit   
+    }
+}
+

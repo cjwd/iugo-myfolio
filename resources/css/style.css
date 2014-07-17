@@ -3749,28 +3749,25 @@ body {
 .copyright {
   text-transform: uppercase;
 }
-/*------------------------------------*\
-    TALKING POINTS
-\*------------------------------------*/
+.tp {
+  width: 80em;
+  /**
+     * reset width to use normal
+     * grid widths
+     */
+}
+@media only screen and (min-width: 64em) {
+  .tp {
+    width: inherit;
+  }
+}
 .talking-points {
   padding: 1em 2em;
-  border: 0px solid #cccccc;
-  border-bottom-width: 1px;
+  border-right: 1px solid #cccccc;
   line-height: 2;
 }
-@media only screen and (min-width: 64em) {
-  .talking-points {
-    border-right-width: 1px;
-    border-bottom-width: 0;
-  }
-}
 .talking-points.last {
-  border-bottom: none;
-}
-@media only screen and (min-width: 64em) {
-  .talking-points.last {
-    border-right: none;
-  }
+  border-right: none;
 }
 .talking-points__image {
   width: 48px;
@@ -3799,20 +3796,40 @@ body {
     font-size: 0.6875rem;
   }
 }
-img {
+.portfolio {
+  width: 160em;
+  height: 200px;
+  /**
+     * reset width to use normal
+     * grid widths
+     */
+}
+@media only screen and (min-width: 64em) {
+  .portfolio {
+    width: inherit;
+    height: auto;
+  }
+}
+.portfolio__img {
   display: block;
 }
 @media only screen and (min-width: 64em) {
-  img {
+  .portfolio__img {
     width: 100%;
     height: 240px;
+  }
+}
+.portfolio__item {
+  width: 320px;
+}
+@media only screen and (min-width: 64em) {
+  .portfolio__item {
+    width: 25%;
   }
 }
 .portfolio__item figure {
   margin: 0;
   position: relative;
-  width: 100%;
-  height: 240px;
 }
 .portfolio__item figcaption {
   position: absolute;
@@ -3843,4 +3860,21 @@ img {
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
+}
+/**
+ * Overflow Carousel Patten for a more 
+ * intuitive UI for responsive grids than 
+ * having stacked boxes.
+ *
+ * codepen.io/cjwd/pen/cwgpk
+ */
+.carousel {
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+@media only screen and (min-width: 64em) {
+  .carousel {
+    overflow: auto;
+  }
 }
