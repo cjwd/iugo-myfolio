@@ -5,6 +5,7 @@ session_start();
 require_once '../phplibs/autoload.php';
 
 $errors = array();
+$messages = array();
 $name = $_POST['fullname'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -47,7 +48,9 @@ if( isset($name, $email, $message) ) {
         $mail->AddAddress('chinarakinda@gmail.com', 'Chinara James');
         
         if($mail->send()){
-            header('Location:../index.php');
+            $messages[] = 'Your Message has been sent. Thank You';
+            $_SESSION['messages'] = $messages;
+            header('Location:../index.php#contact');
             die();
         } else {
             $errors[] = 'Sorry could not send email. Please try again.';
@@ -61,5 +64,6 @@ if( isset($name, $email, $message) ) {
 
 $_SESSION['errors'] = $errors;
 $_SESSION['fields'] = $fields;
+
 
 header('Location:../index.php#contact'); 

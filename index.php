@@ -3,6 +3,7 @@
     require_once 'phpscripts/helpers.php';
     $errors = isset( $_SESSION['errors']) ? $_SESSION['errors'] : array();
     $fields = isset( $_SESSION['fields']) ? $_SESSION['fields'] : array();
+    $messages = isset( $_SESSION['messages']) ? $_SESSION['messages'] : array();
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -308,20 +309,28 @@
                 </div>
             <?php endif; ?>
 
+            <?php if(!empty( $messages )): ?>
+                <div class="form-errors">
+                    <ul>
+                        <li><?php echo implode('</li><li>', $messages); ?></li>
+                    </ul>
+                </div>
+            <?php endif; ?>
+
             <div class="contact-form">
-                <form action="phpscripts/mail.php" method="post" id="contact-form" novalidate>
+                <form action="phpscripts/mail.php" method="post" id="contact-form">
                     <ul class="form-fields">
                         <li>
                             <label for="fullname">Name</label>
-                            <input type="text" class="text-input" name="fullname" id="fullname" <?php echo isset( $fields['name']) ? 'value="' . e($fields['name']) . '"' : '' ?> placeholder="NAME" tabindex="1" minlength="2" required>
+                            <input type="text" class="text-input" name="fullname" id="fullname" <?php echo isset( $fields['name']) ? 'value="' . e($fields['name']) . '"' : '' ?> placeholder="NAME" tabindex="1">
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" class="text-input" name="email" id="email" <?php echo isset( $fields['name']) ? 'value="' . e($fields['email']) . '"' : '' ?> placeholder="EMAIL ADDRESS" tabindex="2" required>
+                            <input type="email" class="text-input" name="email" id="email" <?php echo isset( $fields['name']) ? 'value="' . e($fields['email']) . '"' : '' ?> placeholder="EMAIL ADDRESS" tabindex="2">
                         </li>
                         <li>
                             <label for="message">Message</label>
-                            <textarea class="text-input" name="message" id="message" placeholder="MESSAGE" tabindex="3" required><?php echo isset( $fields['message']) ?  e($fields['message'])  : '' ?></textarea>
+                            <textarea class="text-input" name="message" id="message" placeholder="MESSAGE" tabindex="3"><?php echo isset( $fields['message']) ?  e($fields['message'])  : '' ?></textarea>
 
                         </li>
                     </ul>
@@ -355,3 +364,9 @@
         </script>
     </body>
 </html>
+
+<?php 
+    unset($_SESSION['errors']);
+    unset($_SESSION['fields']);
+    unset($_SESSION['messages']);
+?>

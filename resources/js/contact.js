@@ -52,6 +52,32 @@ $(document).ready(function(){
     Validation
 \*=============================================*/
 
-$(document).ready(function(){
-    $('#contact-form').validate();
-});
+$( function() {
+            $( "#contact-form" ).validate( {
+                rules: {
+                    fullname: {
+                        required: true,
+                        minlength: 3
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Your name is mandatory",
+                        minlength: $.validator.format( "Your name must have at least {0} characters." )
+                    },
+                    email: {
+                        required: "Need an email address",
+                        email: "The email address must be valid"
+                    }
+                },
+                onsubmit: true,
+                errorElement: "span"
+            } );
+        } );
