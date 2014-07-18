@@ -1,8 +1,8 @@
 <?php 
     session_start();
     require_once 'phpscripts/helpers.php';
-    $errors = isset( $_SESSION['errors']) ? $_SESSION['errors'] : [];
-    $fields = isset( $_SESSION['fields']) ? $_SESSION['fields'] : [];
+    $errors = isset( $_SESSION['errors']) ? $_SESSION['errors'] : array();
+    $fields = isset( $_SESSION['fields']) ? $_SESSION['fields'] : array();
 ?>
 <!doctype html>
 <html class="no-js" lang="">
