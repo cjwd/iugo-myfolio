@@ -1,0 +1,118 @@
+/**
+ * Base styles
+ */
+label, input, textarea {
+    border:0;
+    color:#fff;
+}
+
+input, textarea {
+    width: 100%;
+    height:100%;
+    padding: 2.25em 1em 1em;
+    outline:0;
+    text-align: center;
+    background: none;
+}
+
+textarea {
+    height: 12em;
+    resize:none;
+}
+
+label {
+    position: absolute;
+    top:1.23em;
+    left:1.23em;
+    .font-size(13);
+    color: @primary-color;
+    opacity: 1;
+
+    -webkit-transition:.333s ease top, .333s ease opacity;
+    transition:.333s ease top, .333s ease opacity;
+}
+
+
+/*=============================================*\
+    CONTACT FORM
+\*=============================================*/
+
+.contact-form {
+    background-color: #0b0b0b;
+    padding-bottom:4.375em;
+}
+
+.form-fields {
+    margin-bottom:4.375em;
+
+    li {
+        border:2px solid #424242;
+        border-bottom:0;
+        border-left:0;
+        border-right:0;
+        margin-bottom:0;
+        position:relative;
+        background: none;
+
+        &:first-child {
+            border-top-width:0;
+        }
+
+        &:last-child {
+            border-bottom:2px solid #424242;
+        }
+    }
+}
+
+.btn--long {
+    max-width: 200px;
+    
+}
+
+.btn--block {
+    margin:0 auto;
+}
+
+
+/*=============================================*\
+    STATE
+\*=============================================*/
+.js-hide-label label {
+    opacity: 0;
+    top:1.5em;
+}
+
+.js-unhighlight-label label {
+    color:#999;
+}
+
+
+/*.contact-form {
+    background-color:#0b0b0b;
+    padding: 2.1875rem 0;
+    label {
+        display:none;
+    }
+}
+
+
+.text-input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: -moz-use-text-color -moz-use-text-color #737373;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    box-shadow: none;
+    color: #ccc;
+    padding: 3px 6px;
+    position: relative;
+    top: -2px;
+    vertical-align: bottom;
+    width: 333px;
+    text-align: center;
+}*/
