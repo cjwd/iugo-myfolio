@@ -68,7 +68,7 @@
                     <div class="grid grid--full tp">
                         <div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points">
-                                <div class="talking-points__image image--center">
+                                <div class="talking-points__image">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#light-bulb"></use>
@@ -81,7 +81,7 @@
                         </div><!--
                         --><div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points">
-                                <div class="talking-points__image image--center">
+                                <div class="talking-points__image">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#edit"></use>
@@ -94,7 +94,7 @@
                         </div><!--
                         --><div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points">
-                                <div class="talking-points__image image--center">
+                                <div class="talking-points__image">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#gear"></use>
@@ -107,7 +107,7 @@
                         </div><!--
                         --><div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points last">
-                                <div class="talking-points__image image--center">
+                                <div class="talking-points__image">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#laptop"></use>
@@ -135,7 +135,7 @@
 
                     <div class="grid">
                         <div class="grid__item desk--one-half">
-                            <div class="talking-points__image">
+                            <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
                                   <use xlink:href="#globe"></use>
@@ -146,7 +146,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                         </div><!--
                         --><div class="grid__item desk--one-half">
-                            <div class="talking-points__image">
+                            <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
                                   <use xlink:href="#search1"></use>
@@ -157,7 +157,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                         </div><!--
                         --><div class="grid__item desk--one-half">
-                            <div class="talking-points__image">
+                            <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
                                   <use xlink:href="#alarm-clock"></use>
@@ -168,7 +168,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                         </div><!--
                         --><div class="grid__item desk--one-half">
-                            <div class="talking-points__image">
+                            <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
                                   <use xlink:href="#graph"></use>
@@ -321,7 +321,7 @@
                         </li>
                         <li>
                             <label for="message">Message</label>
-                            <textarea type="text" class="text-input" name="message" id="message" placeholder="MESSAGE" tabindex="3" required><?php echo isset( $fields['name']) ?  e($fields['message'])  : '' ?></textarea>
+                            <textarea class="text-input" name="message" id="message" placeholder="MESSAGE" tabindex="3" required><?php echo isset( $fields['message']) ?  e($fields['message'])  : '' ?></textarea>
 
                         </li>
                     </ul>
