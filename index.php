@@ -27,9 +27,8 @@
         <!-- ICONS -->
           <?php include 'phpscripts/includes/svg.php'; ?>
           <!-- ICONS -->
-
-        <header class="site-nav" id="site-header">
-            <div class="container">
+        <div class="top">
+            <header class="site-header" id="site-header">
                 <div class="site-nav__logo"><h1 class="logotype">my<span class="logo-color">folio</span></h1></div>
                 <nav class="site-nav__navbar sticky-nav" data-ui-component="navbar" role="navigation">
                     <button type="button" id="showTop" class="navbar-toggle">
@@ -67,10 +66,9 @@
                     </div> -->
                 </nav>
                 <!-- end main navigation -->
-            </div>
-            <!-- end container -->
-        </header>
-        <!-- end header -->
+            </header>
+            <!-- end header -->
+        </top>
         
         <div class="hero" id="home">
             <div class="word-block">
@@ -95,7 +93,7 @@
                     <div class="grid grid--full tp">
                         <div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points">
-                                <div class="talking-points__image">
+                                <div class="talking-points__image image--center">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#light-bulb"></use>
@@ -108,7 +106,7 @@
                         </div><!--
                         --><div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points">
-                                <div class="talking-points__image">
+                                <div class="talking-points__image image--center">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#edit"></use>
@@ -121,7 +119,7 @@
                         </div><!--
                         --><div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points">
-                                <div class="talking-points__image">
+                                <div class="talking-points__image image--center">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#gear"></use>
@@ -134,7 +132,7 @@
                         </div><!--
                         --><div class="grid__item  one-quarter desk--one-quarter">
                             <div class="talking-points last">
-                                <div class="talking-points__image">
+                                <div class="talking-points__image image--center">
                                   <svg viewBox="0 0 32 32">
                                     <g filter="">
                                       <use xlink:href="#laptop"></use>
