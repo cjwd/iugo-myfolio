@@ -7,3 +7,4 @@
 //@prepros-append fastclick.js
 //@prepros-append scroll.js
 //@prepros-append fixed-responsive-nav.js
+//@prepros-append contact.js
