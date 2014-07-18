@@ -32,14 +32,14 @@ if( isset($name, $email, $message) ) {
         $mail->SMTPAuth = true;
         
         $mail->Host = 'smtp.gmail.com';
-        $mail->Username = 'chinarakinda@gmail.com';
-        $mail->Password = 'GodisL0v3!';
+        $mail->Username = 'specialagentsecret@gmail.com';
+        $mail->Password = 'Supersecretpassword';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
         
         $mail->isHTML();
         
-        $mail->Subject = 'Contact form submitted';
+        $mail->Subject = 'Message from Myfolio';
         $mail->Body = 'From: ' . $fields['name'] . ' (' . $fields['email'] . ')<p>' . $fields['message'] . '</p>';
         
         $mail->FromName = 'Contact';
