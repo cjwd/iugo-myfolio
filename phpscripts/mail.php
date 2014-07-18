@@ -4,17 +4,17 @@ session_start();
 
 require_once '../phplibs/autoload.php';
 
-$errors = [];
+$errors = array();
 $name = $_POST['fullname'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
 if( isset($name, $email, $message) ) {
-    $fields = [
+    $fields = array(
         'name' => $name,
         'email' => $email,
         'message' => $message
-    ];
+    );
     
     foreach($fields as $field => $data) {
         if( empty($data) ) {
