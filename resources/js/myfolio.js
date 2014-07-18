@@ -1,7 +1,8 @@
 define([
     'classie',
     'wpsticky',
-    'smooth-scroll'   
+    'smooth-scroll',
+    'jqvalidation'   
 ], function( classie ){
     'use strict';
 
@@ -11,6 +12,7 @@ define([
             this.stickyNav();
             this.scroll();
             this.contactForm();
+            this.validateForm();
         },
 
         stickyNav: function(){
@@ -19,6 +21,10 @@ define([
 
         scroll: function(){
             $('.site-nav a').smoothScroll();
+        },
+
+        validateForm: function(){
+            $('#contact-form').validate();
         },
 
         contactForm: function() {

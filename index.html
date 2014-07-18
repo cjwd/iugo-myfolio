@@ -523,19 +523,19 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor</p>
             <div class="contact-form">
-                <form action="#" method="post" id="contact-form">
+                <form action="#" method="post" id="contact-form" novalidate>
                     <ul class="form-fields">
                         <li>
                             <label for="fullname">Name</label>
-                            <input type="text" class="text-input" name="fullname" id="fullname" placeholder="NAME" tabindex="1">
+                            <input type="text" class="text-input" name="fullname" id="fullname" placeholder="NAME" tabindex="1" minlength="2" required>
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" class="text-input" name="email" id="email" placeholder="EMAIL ADDRESS" tabindex="2">
+                            <input type="email" class="text-input" name="email" id="email" placeholder="EMAIL ADDRESS" tabindex="2" required>
                         </li>
                         <li>
                             <label for="message">Message</label>
-                            <textarea type="text" class="text-input" name="message" id="message" placeholder="MESSAGE" tabindex="3"></textarea>
+                            <textarea type="text" class="text-input" name="message" id="message" placeholder="MESSAGE" tabindex="3" required></textarea>
 
                         </li>
                     </ul>

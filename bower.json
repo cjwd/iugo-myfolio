@@ -5,6 +5,7 @@
         "csswizardry-grids": "latest",
         "jquery-waypoints": "latest",
         "requirejs": "latest",
-        "jquery.smooth-scroll": "latest"
+        "jquery.smooth-scroll": "latest",
+        "jquery.validation": "latest"
     }
 }

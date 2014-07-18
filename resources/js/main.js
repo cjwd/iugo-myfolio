@@ -5,7 +5,8 @@ require.config({
         'wpsticky': '../../vendors/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky',
         'waypoints': '../../vendors/jquery-waypoints/waypoints',
         'smooth-scroll': '../../vendors/jquery.smooth-scroll/jquery.smooth-scroll',
-        'classie': '../../vendors/classie'
+        'classie': '../../vendors/classie',
+        'jqvalidation': '../../vendors/jquery.validation/dist/jquery.validate'
     },
     
     shim: {
@@ -24,6 +25,12 @@ require.config({
 
         'smooth-scroll': {
             deps: [
+                'jquery'
+            ]
+        },
+
+        'jqvalidation': {
+            dep: [
                 'jquery'
             ]
         }
