@@ -3,6 +3,8 @@
     "version": "0.0.5",
     "dependencies": {
         "csswizardry-grids": "latest",
-        "jquery-waypoints": "latest"
+        "jquery-waypoints": "latest",
+        "requirejs": "latest",
+        "jquery.smooth-scroll": "latest"
     }
 }

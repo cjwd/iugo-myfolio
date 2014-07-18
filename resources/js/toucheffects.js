@@ -1,3 +1,4 @@
+
 /** Used Only For Touch Devices **/
 ( function( window ) {
 	
@@ -79,3 +80,4 @@
 	}
 
 })( window );
+

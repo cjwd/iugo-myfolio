@@ -11,16 +11,9 @@
     }
 }
 
-.collapse {
-    display:none;
-    
-    @media only screen and (min-width: ~"@{desk}em") {
-        display:inline-block;
 
-    }
-
-            
-
+.desktop-menu a:last-child {
+    padding-right: 0;
 }
 
 .site-nav {
@@ -55,8 +48,17 @@
     content: '';
     height: 100%;
 }
- 
-.site-nav__navbar a {
+
+.desktop-menu {
+    display:none;
+
+    @media only screen and (min-width: ~"@{desk}em") {
+        display:inline-block;
+
+    }
+}
+
+.desktop-menu a {
     padding: 0 0.6em;
     margin-right: 1.5em;
     white-space: nowrap;
@@ -67,9 +69,7 @@
     text-decoration: none;
 }
  
-.site-nav__navbar a:last-child {
-    padding-right: 0;
-}
+
 /*------------------------------------*\
     $Logotype
 \*------------------------------------*/

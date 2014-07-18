@@ -4,15 +4,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>MyFolio</title>
-        <meta name="description" content="">
-        <meta author="Chinara James" content="">
+        <meta name="description" content="Myfolio: single page portfolio for my friend Dexter" />
+        <meta name="keywords" content="portfolio, iugo digital, single page" />
+        <meta name="author" content="Chinara James" />
+        <link rel="shortcut icon" href="../favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="resources/css/style.css">
         <script src="resources/js/modernizr.custom.js"></script>
 
     </head>
-    <body id="top">
+    <body class="spmenu-push" id="top">
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -226,10 +228,10 @@
           </svg>
           <!-- ICONS -->
 
-        <header class="site-nav">
+        <header class="site-nav" id="site-header">
             <div class="site-nav__logo"><h1 class="logotype">my<span class="logo-color">folio</span></h1></div>
             <nav class="site-nav__navbar sticky-nav" data-ui-component="navbar" role="navigation">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" id="showTop" class="navbar-toggle">
                     <span class="accessibility">Toggle navigation</span>
                     <div class="toggle">
                       <svg viewBox="0 0 32 32">
@@ -239,13 +241,30 @@
                       </svg>
                     </div>
                 </button>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                <div class="desktop-menu">
                     <a href="#home">Home</a>
                     <a href="#about">About Me</a>
                     <a href="#services">Services</a>
                     <a href="#work">My Work</a>
                     <a href="#contact">Contact Me</a>
                 </div>
+                <div class="spmenu spmenu-horizontal spmenu-top" id="spmenu-top">
+                    <h3>Menu <span class="spmenu-close float--right">x</span></h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#services">Services</a>
+                    <a href="#work">My Work</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <!-- <div class="spmenu spmenu-vertical spmenu-right" id="spmenu-right">
+                    <h3>Menu <span id="hideRightPush" class="spmenu-close float--right">x</span></h3>
+                    <a href="#home" class="hideRightPush">Home</a>
+                    <a href="#about" class="hideRightPush">About Me</a>
+                    <a href="#services" class="hideRightPush">Services</a>
+                    <a href="#work" class="hideRightPush">My Work</a>
+                    <a href="#contact" class="hideRightPush">Contact Me</a>
+                </div> -->
             </nav>
             <!-- end main navigation -->
         </header>
@@ -504,19 +523,19 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor</p>
             <div class="contact-form">
-                <form action="#" method="post">
+                <form action="#" method="post" id="contact-form">
                     <ul class="form-fields">
                         <li>
                             <label for="fullname">Name</label>
-                            <input type="text" class="text-input" name="fullname" placeholder="NAME">
+                            <input type="text" class="text-input" name="fullname" id="fullname" placeholder="NAME" tabindex="1">
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" class="text-input" name="email" placeholder="EMAIL ADDRESS">
+                            <input type="email" class="text-input" name="email" id="email" placeholder="EMAIL ADDRESS" tabindex="2">
                         </li>
                         <li>
                             <label for="message">Message</label>
-                            <input type="text" class="text-input" name="message" placeholder="MESSAGE">
+                            <input type="text" class="text-input" name="message" id="message" placeholder="MESSAGE" tabindex="3">
                         </li>
                         <li>
                             <button type="submit" class="btn btn--primary btn--hard">Submit</button>
@@ -536,7 +555,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-        <script data-main="resources/js/main" src="resources/js/require.js"></script>
+        <script data-main="resources/js/main" src="vendors/requirejs/require.js"></script>
+        <script src="resources/js/min/toucheffects.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
