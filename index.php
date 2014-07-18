@@ -28,47 +28,22 @@
           <?php include 'phpscripts/includes/svg.php'; ?>
           <!-- ICONS -->
         <div class="top">
+
             <header class="site-header" id="site-header">
-                <div class="site-nav__logo"><h1 class="logotype">my<span class="logo-color">folio</span></h1></div>
-                <nav class="site-nav__navbar sticky-nav" data-ui-component="navbar" role="navigation">
-                    <button type="button" id="showTop" class="navbar-toggle">
-                        <span class="accessibility">Toggle navigation</span>
-                        <div class="toggle">
-                          <svg viewBox="0 0 32 32">
-                            <g filter="">
-                              <use xlink:href="#list"></use>
-                            </g>
-                          </svg>
-                        </div>
-                    </button>
-                    <div class="desktop-menu">
-                        <a href="#home">Home</a>
-                        <a href="#about">About Me</a>
-                        <a href="#services">Services</a>
-                        <a href="#work">My Work</a>
-                        <a href="#contact">Contact Me</a>
-                    </div>
-                    <div class="spmenu spmenu-horizontal spmenu-top" id="spmenu-top">
-                        <h3>Menu <span class="spmenu-close float--right">x</span></h3>
-                        <a href="#home">Home</a>
-                        <a href="#about">About Me</a>
-                        <a href="#services">Services</a>
-                        <a href="#work">My Work</a>
-                        <a href="#contact">Contact Me</a>
-                    </div>
-                    <!-- <div class="spmenu spmenu-vertical spmenu-right" id="spmenu-right">
-                        <h3>Menu <span id="hideRightPush" class="spmenu-close float--right">x</span></h3>
-                        <a href="#home" class="hideRightPush">Home</a>
-                        <a href="#about" class="hideRightPush">About Me</a>
-                        <a href="#services" class="hideRightPush">Services</a>
-                        <a href="#work" class="hideRightPush">My Work</a>
-                        <a href="#contact" class="hideRightPush">Contact Me</a>
-                    </div> -->
+                <a href="#home" class="logo" data-scroll><h1 class="logotype">my<span class="logo-color">folio</span></h1></a>
+                <nav class="nav-collapse">
+                    <ul>
+                      <li class="active"><a href="#home" data-scroll>Home</a></li>
+                      <li><a href="#about" data-scroll>About</a></li>
+                      <li><a href="#services" data-scroll>Services</a></li>
+                      <li><a href="#work" data-scroll>My Work</a></li>
+                      <li><a href="#contact" data-scroll>Contact Me</a></li>
+                    </ul>
                 </nav>
-                <!-- end main navigation -->
             </header>
             <!-- end header -->
-        </top>
+        </div>
+        <!-- end top -->
         
         <div class="hero" id="home">
             <div class="word-block">
@@ -366,8 +341,12 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-        <script data-main="resources/js/main" src="vendors/requirejs/require.js"></script>
+        <!-- /*<script data-main="resources/js/main" src="vendors/requirejs/require.js"></script>*/ -->
         <script src="resources/js/min/toucheffects.min.js"></script>
+        <script src="resources/js/responsive-nav.js"></script>
+        <script src="resources/js/fastclick.js"></script>
+        <script src="resources/js/scroll.js"></script>
+        <script src="resources/js/fixed-responsive-nav.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
