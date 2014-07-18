@@ -342,11 +342,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <!-- /*<script data-main="resources/js/main" src="vendors/requirejs/require.js"></script>*/ -->
-        <script src="resources/js/min/toucheffects.min.js"></script>
-        <script src="resources/js/responsive-nav.js"></script>
-        <script src="resources/js/fastclick.js"></script>
-        <script src="resources/js/scroll.js"></script>
-        <script src="resources/js/fixed-responsive-nav.js"></script>
+        <script src="resources/js/min/scripts.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
