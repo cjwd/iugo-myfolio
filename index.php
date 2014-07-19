@@ -302,7 +302,7 @@
             tempor</p>
 
             <?php if(!empty( $errors )): ?>
-                <div class="form-errors">
+                <div class="form-messages">
                     <ul>
                         <li><?php echo implode('</li><li>', $errors); ?></li>
                     </ul>
@@ -310,7 +310,7 @@
             <?php endif; ?>
 
             <?php if(!empty( $messages )): ?>
-                <div class="form-errors">
+                <div class="form-messages">
                     <ul>
                         <li><?php echo implode('</li><li>', $messages); ?></li>
                     </ul>

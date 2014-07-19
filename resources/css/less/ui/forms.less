@@ -32,6 +32,22 @@ label {
     transition:.333s ease top, .333s ease opacity;
 }
 
+::-webkit-input-placeholder {
+   color: #898989;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #898989;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #898989;  
+}
+
+:-ms-input-placeholder {  
+   color: #898989;  
+}
+
 
 /*=============================================*\
     CONTACT FORM
@@ -59,7 +75,7 @@ label {
     margin-bottom:4.375em;
 
     li {
-        border:2px solid #424242;
+        border:2px solid #898989;
         border-bottom:0;
         border-left:0;
         border-right:0;
@@ -72,7 +88,7 @@ label {
         }
 
         &:last-child {
-            border-bottom:2px solid #424242;
+            border-bottom:2px solid #898989;
         }
     }
 }
@@ -105,7 +121,7 @@ label {
     $ERRORS
 \*=============================================*/
 
-.form-errors {
+.form-messages {
     width:95%;
     margin:0 auto;
     padding: 1em;
@@ -122,4 +138,8 @@ label {
         width:50%;
     }
     
+}
+
+.error {
+    color:#e74c3c; //#c0392b;
 }
