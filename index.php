@@ -202,7 +202,7 @@
                             <figcaption>
                                 <h3>Title goes here</h3>
                                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                <a href="#" class="btn">Take a look</a>
+                                
                             </figcaption>
                         </figure>                       
                     </li><!--
@@ -214,7 +214,7 @@
                                 <figcaption>
                                     <h3>Title goes here</h3>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                    <a href="#" class="btn">Take a look</a>
+                                    
                                 </figcaption>
                             </figure> 
                         </li><!--
@@ -226,7 +226,7 @@
                                 <figcaption>
                                     <h3>Title goes here</h3>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                    <a href="#" class="btn">Take a look</a>
+                                    
                                 </figcaption>
                             </figure> 
                         </li><!--
@@ -238,7 +238,7 @@
                                 <figcaption>
                                     <h3>Title goes here</h3>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                    <a href="#" class="btn">Take a look</a>
+                                    
                                 </figcaption>
                             </figure> 
                         </li><!--
@@ -250,7 +250,7 @@
                                 <figcaption>
                                     <h3>Title goes here</h3>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                    <a href="#" class="btn">Take a look</a>
+                                    
                                 </figcaption>
                             </figure> 
                         </li><!--
@@ -262,7 +262,7 @@
                                 <figcaption>
                                     <h3>Title goes here</h3>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                    <a href="#" class="btn">Take a look</a>
+                                    
                                 </figcaption>
                             </figure> 
                         </li><!--
@@ -274,7 +274,7 @@
                                 <figcaption>
                                     <h3>Title goes here</h3>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                    <a href="#" class="btn">Take a look</a>
+                                    
                                 </figcaption>
                             </figure> 
                         </li><!--
@@ -286,7 +286,7 @@
                                 <figcaption>
                                     <h3>Title goes here</h3>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sed, repellat.</span>
-                                    <a href="#" class="btn">Take a look</a>
+                                    
                                 </figcaption>
                             </figure> 
                         </li>

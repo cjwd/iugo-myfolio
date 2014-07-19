@@ -1,7 +1,7 @@
 .portfolio {
 
     width:160em;
-    height:200px;
+    height:400px;
     /**
      * reset width to use normal
      * grid widths
@@ -14,6 +14,9 @@
 
 .portfolio__img {
     display: block;
+    position: absolute;
+    top: 100%;
+    clip: rect(0px, 320px, 200px, 0px);
 
     @media only screen and (min-width: ~"@{desk}em") {
         width:100%;
@@ -38,16 +41,19 @@
     }
     
     figcaption {
-        position: absolute;
-        top: 0;
-        left:0;
         padding: 20px;
         background: @brand-color;
         color: #fff;
-        
-        a {
-            color:orange;
+        border-right:1px solid @primary-color;
+
+        @media only screen and (min-width: ~"@{desk}em") {
+            position: absolute;
+            top: 0;
+            left:0;
+            
+
         }
+
     }
 
 }
@@ -60,7 +66,12 @@
 .fadeIn figcaption {
     height:100%;
     width:100%;
-    opacity: 0;
+    opacity: 1;
+
+    @media only screen and (min-width: ~"@{desk}em") {
+        opacity:0;
+
+    }
     
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -71,7 +82,7 @@
 }
 
 .no-touch .fadeIn figure:hover figcaption,
-.fadeIn figure.cs-hover figcaption {
+/*.fadeIn figure.cs-hover figcaption*/ {
     opacity: 1;
     
     -webkit-transform: scale(0.8);
