@@ -95,14 +95,24 @@
     text-align: center;
     
     @media only screen and (min-width: ~"@{desk}em") {
-        background:#F0F0E8 url('imgs/woman-typing-on-mac.png') 100% 0 no-repeat;
+        background:#F0F0E8 url('imgs/woman-typing-on-mac.png') 175% 0 no-repeat;
         text-align: left;
+    }
+
+    @media only screen and (min-width: ~"@{wide}em") {
+        background-position: 100% 0;
+
     }
     
 }
 
 .services-listing {
+
     @media only screen and (min-width: ~"@{desk}em") {
+        margin-right:30%;
+    }
+
+    @media only screen and (min-width: ~"@{wide}em") {
         margin-right:50%;
     }
     

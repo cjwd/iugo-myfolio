@@ -28,9 +28,8 @@
         <!-- ICONS -->
           <?php include 'phpscripts/includes/svg.php'; ?>
           <!-- ICONS -->
-        <div class="top">
-
-            <header class="site-header" id="site-header">
+        <header class="site-header" id="site-header">
+            <div class="container">
                 <a href="#home" class="logo" data-scroll><h1 class="logotype">my<span class="logo-color">folio</span></h1></a>
                 <nav class="nav-collapse">
                     <ul>
@@ -41,7 +40,10 @@
                       <li><a href="#contact" data-scroll>Contact Me</a></li>
                     </ul>
                 </nav>
-            </header>
+            </div>
+            <!-- end container -->
+        </header>
+
             <!-- end header -->
         </div>
         <!-- end top -->
@@ -65,6 +67,12 @@
             <div class="container">
                 <h1 class="section-title">About Me</h1>
                 <p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <span class="highlight">ad minim veniam,quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="grid">
+                    <div class="scroll-indicator-wrapper grid__item one-whole">
+                        <span class="wp1 scroll-indicator animated">&harr;</span>
+                    </div>
+                </div>
+                
                 <div class="tp-wrap carousel">
                     <div class="grid grid--full tp">
                         <div class="grid__item  one-quarter desk--one-quarter">
@@ -129,13 +137,14 @@
         <!-- end about -->
         
         <section id="services">
-           <div class="services-listing">
+            <div class="container">
+            <div class="services-listing">
                 <div class="inner">
                     <h1 class="section-title">Services</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,  repellat asperiores aperiam adipisci temporibus reiciendis tenetur.</p>
 
                     <div class="grid">
-                        <div class="grid__item desk--one-half">
+                        <div class="grid__item lap--one-half desk--one-half">
                             <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
@@ -146,7 +155,7 @@
                             <h4>Title goes here</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                         </div><!--
-                        --><div class="grid__item desk--one-half">
+                        --><div class="grid__item lap--one-half desk--one-half">
                             <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
@@ -157,7 +166,7 @@
                             <h4>Title goes here</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                         </div><!--
-                        --><div class="grid__item desk--one-half">
+                        --><div class="grid__item lap--one-half desk--one-half">
                             <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
@@ -168,7 +177,7 @@
                             <h4>Title goes here</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                         </div><!--
-                        --><div class="grid__item desk--one-half">
+                        --><div class="grid__item lap--one-half desk--one-half">
                             <div class="talking-points__image image--left">
                               <svg viewBox="0 0 32 32">
                                 <g filter="">
@@ -183,7 +192,8 @@
                 </div>    
             </div>
             <!-- end service-listing -->
-            
+            </div>
+            <!-- end container -->
         </section>
         <!-- end services -->
         
@@ -191,6 +201,12 @@
             <h1 class="section-title">My Work</h1>
             <p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor</p>
+
+            <div class="grid">
+                <div class="scroll-indicator-wrapper grid__item one-whole">
+                    <span class="wp2 scroll-indicator animated">&harr;</span>
+                </div>
+            </div>
             
             <div class="portfolio-wrapper carousel">
                 <ul class="portfolio fadeIn grid grid--full">
