@@ -311,7 +311,7 @@
         
         <section class="section-padding" id="contact">
             <h1 class="section-title">Contact Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor</p>
 
             <?php if(!empty( $errors )): ?>
