@@ -12,12 +12,12 @@ $(document).ready(function(){
 
     // Hide labels by default if placeholders are supported
     if($.support.placeholder) {
-        $('#contact-form li').each(function(){
+        $('.contact-form li').each(function(){
             $(this).addClass('js-hide-label');
         });  
 
         // Code for adding/removing classes here
-        $('#contact-form li').find('input, textarea').on('keyup blur focus', function(e){
+        $('.contact-form li').find('input, textarea').on('keyup blur focus', function(e){
             
             // Cache our selectors
             var $this = $(this),
@@ -57,7 +57,7 @@ $( function() {
                 rules: {
                     fullname: {
                         required: true,
-                        minlength: 3
+                        minlength: 2
                     },
                     email: {
                         required: true,

@@ -26,15 +26,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- ICONS -->
-          <?php include 'phpscripts/includes/svg.php'; ?>
-          <!-- ICONS -->
+        <?php include 'phpscripts/includes/svg.php'; ?>
+        <!-- ICONS -->
         <header class="site-header" id="site-header">
             <div class="container">
                 <a href="#home" class="logo" data-scroll><h1 class="logotype">my<span class="logo-color">folio</span></h1></a>
                 <nav class="nav-collapse">
                     <ul>
                       <li class="active"><a href="#home" data-scroll>Home</a></li>
-                      <li><a href="#about" data-scroll>About</a></li>
+                      <li><a href="#about" data-scroll>About Me</a></li>
                       <li><a href="#services" data-scroll>Services</a></li>
                       <li><a href="#work" data-scroll>My Work</a></li>
                       <li><a href="#contact" data-scroll>Contact Me</a></li>
@@ -43,10 +43,8 @@
             </div>
             <!-- end container -->
         </header>
+        <!-- end header -->
 
-            <!-- end header -->
-        </div>
-        <!-- end top -->
         
         <div class="hero" id="home">
             <div class="word-block">
@@ -138,60 +136,60 @@
         
         <section id="services">
             <div class="container">
-            <div class="services-listing">
-                <div class="inner">
-                    <h1 class="section-title">Services</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,  repellat asperiores aperiam adipisci temporibus reiciendis tenetur.</p>
+                <div class="services-listing">
+                    <div class="inner">
+                        <h1 class="section-title">Services</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,  repellat asperiores aperiam adipisci temporibus reiciendis tenetur.</p>
 
-                    <div class="grid">
-                        <div class="grid__item lap--one-half desk--one-half">
-                            <div class="talking-points__image image--left">
-                              <svg viewBox="0 0 32 32">
-                                <g filter="">
-                                  <use xlink:href="#globe"></use>
-                                </g>
-                              </svg>
+                        <div class="grid">
+                            <div class="grid__item lap--one-half desk--one-half">
+                                <div class="talking-points__image image--left">
+                                  <svg viewBox="0 0 32 32">
+                                    <g filter="">
+                                      <use xlink:href="#globe"></use>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <h4>Title goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
+                            </div><!--
+                            --><div class="grid__item lap--one-half desk--one-half">
+                                <div class="talking-points__image image--left">
+                                  <svg viewBox="0 0 32 32">
+                                    <g filter="">
+                                      <use xlink:href="#search1"></use>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <h4>Title goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
+                            </div><!--
+                            --><div class="grid__item lap--one-half desk--one-half">
+                                <div class="talking-points__image image--left">
+                                  <svg viewBox="0 0 32 32">
+                                    <g filter="">
+                                      <use xlink:href="#alarm-clock"></use>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <h4>Title goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
+                            </div><!--
+                            --><div class="grid__item lap--one-half desk--one-half">
+                                <div class="talking-points__image image--left">
+                                  <svg viewBox="0 0 32 32">
+                                    <g filter="">
+                                      <use xlink:href="#graph"></use>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <h4>Title goes here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                             </div>
-                            <h4>Title goes here</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
-                        </div><!--
-                        --><div class="grid__item lap--one-half desk--one-half">
-                            <div class="talking-points__image image--left">
-                              <svg viewBox="0 0 32 32">
-                                <g filter="">
-                                  <use xlink:href="#search1"></use>
-                                </g>
-                              </svg>
-                            </div>
-                            <h4>Title goes here</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
-                        </div><!--
-                        --><div class="grid__item lap--one-half desk--one-half">
-                            <div class="talking-points__image image--left">
-                              <svg viewBox="0 0 32 32">
-                                <g filter="">
-                                  <use xlink:href="#alarm-clock"></use>
-                                </g>
-                              </svg>
-                            </div>
-                            <h4>Title goes here</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
-                        </div><!--
-                        --><div class="grid__item lap--one-half desk--one-half">
-                            <div class="talking-points__image image--left">
-                              <svg viewBox="0 0 32 32">
-                                <g filter="">
-                                  <use xlink:href="#graph"></use>
-                                </g>
-                              </svg>
-                            </div>
-                            <h4>Title goes here</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                         </div>
-                    </div>
-                </div>    
-            </div>
-            <!-- end service-listing -->
+                    </div>    
+                </div>
+                <!-- end service-listing -->
             </div>
             <!-- end container -->
         </section>
