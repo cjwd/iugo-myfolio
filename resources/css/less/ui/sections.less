@@ -63,7 +63,7 @@
     line-height: 2;
     
     @media only screen and (min-width: ~"@{desk}em") {
-        margin-bottom:6rem;
+        margin: 0 10em 6em 10em;
         line-height:2.5;
     }
 }
@@ -95,13 +95,24 @@
     text-align: center;
     
     @media only screen and (min-width: ~"@{desk}em") {
-        background:#F0F0E8 url('imgs/woman-typing-on-mac.png') 175% 0 no-repeat;
+        background-color:#F0F0E8;
+        background-image: url('imgs/woman-typing-on-mac.png');
+        background-repeat: no-repeat;
+        background-position: 175% 0;
         text-align: left;
+    }
+
+    /**
+     * Chrome Bug on Mac
+     * not detecting em mediaqueries
+     * and hence using the wrong breakpoint
+     */
+    @media only screen and (min-width: 1200px) {
+        background-position: 100% 0;
     }
 
     @media only screen and (min-width: ~"@{wide}em") {
         background-position: 100% 0;
-
     }
     
 }
@@ -109,10 +120,19 @@
 .services-listing {
 
     @media only screen and (min-width: ~"@{desk}em") {
-        margin-right:30%;
+        margin-right:40%;
     }
 
     @media only screen and (min-width: ~"@{wide}em") {
+        margin-right:50%;
+    }
+
+    /**
+     * Chrome Bug on Mac
+     * not detecting em mediaqueries
+     * and hence using the wrong breakpoint
+     */
+    @media only screen and (min-width: 1200px) {
         margin-right:50%;
     }
     

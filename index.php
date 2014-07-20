@@ -14,7 +14,6 @@
         <meta name="description" content="Myfolio: single page portfolio for my friend Dexter" />
         <meta name="keywords" content="portfolio, iugo digital, single page" />
         <meta name="author" content="Chinara James" />
-        <link rel="shortcut icon" href="../favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="resources/css/style.css">
@@ -150,8 +149,8 @@
                                     </g>
                                   </svg>
                                 </div>
-                                <h4>Title goes here</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
+                                <h4 class="talking-points__title">Title goes here</h4>
+                                <p class="talking-points__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                             </div><!--
                             --><div class="grid__item lap--one-half desk--one-half">
                                 <div class="talking-points__image image--left">
@@ -161,8 +160,8 @@
                                     </g>
                                   </svg>
                                 </div>
-                                <h4>Title goes here</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
+                                <h4 class="talking-points__title">Title goes here</h4>
+                                <p class="talking-points__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                             </div><!--
                             --><div class="grid__item lap--one-half desk--one-half">
                                 <div class="talking-points__image image--left">
@@ -172,8 +171,8 @@
                                     </g>
                                   </svg>
                                 </div>
-                                <h4>Title goes here</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
+                                <h4 class="talking-points__title">Title goes here</h4>
+                                <p class="talking-points__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                             </div><!--
                             --><div class="grid__item lap--one-half desk--one-half">
                                 <div class="talking-points__image image--left">
@@ -183,8 +182,8 @@
                                     </g>
                                   </svg>
                                 </div>
-                                <h4>Title goes here</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
+                                <h4 class="talking-points__title">Title goes here</h4>
+                                <p class="talking-points__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptate suscipit.</p>
                             </div>
                         </div>
                     </div>    

@@ -22,6 +22,10 @@
 .scroll-indicator-wrapper {
     position: relative;
     height:60px;
+
+    @media only screen and (min-width: ~"@{desk}em") {
+        display:none; 
+    }
 }
 
     .scroll-indicator {
@@ -39,7 +43,5 @@
         -moz-animation-iteration-count: infinite;
         -ms-animation-iteration-count: infinite;
 
-         @media only screen and (min-width: ~"@{desk}em") {
-            display:none; 
-        }
+        
     }
